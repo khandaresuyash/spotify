@@ -74,6 +74,10 @@ flutter:
     - icons/search.svg
     - icons/library.svg
     - icons/me.svg
+    - assets/dw.jpg
+    - assets/at.png
+    - assets/ab.png
+    - assets/mix.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

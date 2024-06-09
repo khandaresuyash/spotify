@@ -7,39 +7,42 @@ class AudiobooksCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: Image.asset(
-            "assets/a1.jpg",
-            height: 180,
-            width: 140,
-            fit: BoxFit.cover,
+    return Padding(
+      padding: const EdgeInsets.only(right: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(8),
+            child: Image.asset(
+              "assets/ab.png",
+              height: 180,
+              width: 140,
+              fit: BoxFit.cover,
+            ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 5),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              SvgPicture.asset("icons/audBook.svg"),
-              Text(
-                "Halo: The Flood",
-                style: TextStyle(fontSize: 12),
-              )
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 5),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SvgPicture.asset("icons/audBook.svg"),
+                Text(
+                  "Halo: The Flood",
+                  style: TextStyle(fontSize: 12),
+                )
+              ],
+            ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 4),
-          child: Text(
-            "William C. Dietz",
-            style: TextStyle(fontSize: 10, color: ThemeColors.fontSecondary),
-          ),
-        )
-      ],
+          Padding(
+            padding: const EdgeInsets.only(left: 4),
+            child: Text(
+              "William C. Dietz",
+              style: TextStyle(fontSize: 10, color: ThemeColors.fontSecondary),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
@@ -56,7 +59,7 @@ class FavArtistCard extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(100),
             child: Image.asset(
-              "assets/a1.jpg",
+              "assets/at.png",
               height: 140,
               width: 140,
             ),
@@ -229,7 +232,7 @@ class MadeForYouCard extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(8),
                 child: Image.asset(
-                  "assets/a1.jpg",
+                  "assets/dw.jpg",
                   height: 140,
                   width: 140,
                 ),
