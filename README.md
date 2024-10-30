@@ -1,2 +1,2 @@
 # Spotify
-Spotify interface built with flutter, Designed by @juxtopposed.
+Spotify interface re-design built with flutter, Designed by @juxtopposed.
